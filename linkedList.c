@@ -60,6 +60,8 @@ void testinsert_front()
   struct node *node2 = Node(1, node3);
   struct node *node1 = Node(0, node2);
   print_list(node1);
+  printf("inserting a 7 in front\n");
+  print_list(insert_front(node1, 7));
   free_list(node1);
 }
 
@@ -67,5 +69,6 @@ void testinsert_front()
 int main()
 {
   testprint_list();
+  testinsert_front();
   return 0;
 }
